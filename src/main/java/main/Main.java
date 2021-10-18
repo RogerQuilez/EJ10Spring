@@ -36,13 +36,11 @@ public class Main {
 					break;
 					
 				case 4:
-					List<SuperHeroe> superHeroesPoder = context.getBean("listaPoder", List.class);
-					printSuperHeroes(superHeroesPoder);
+					printSuperHeroes(context.getBean("listaPoder", List.class));
 					break;
 					
 				case 5:
-					List<SuperHeroe> superHeroesSuperPoder = context.getBean("listaSuperPoder", List.class);
-					printSuperHeroes(superHeroesSuperPoder);
+					printSuperHeroes(context.getBean("listaSuperPoder", List.class));
 					break;
 					
 				case 0:
